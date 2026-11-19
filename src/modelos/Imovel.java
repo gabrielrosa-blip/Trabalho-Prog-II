@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class  Imovel {
-
+    private static int sequenciaCodigo = 1;
     private int codigo;
     private CategoriaImovel categoriaImovel;
     private StatusImovel statusImovel;
