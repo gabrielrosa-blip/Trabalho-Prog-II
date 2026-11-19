@@ -56,7 +56,7 @@ public class Funcionario extends Pessoa{
     public Double calcularSalarioTotal(){
         double totalComissoes = transacoes.stream().mapToDouble(Transacao
         ::getComissaoFuncionario).sum();
-        return totalComissoes + salario;
+        return salario +  totalComissoes;
     }
 
 
