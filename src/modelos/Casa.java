@@ -12,7 +12,7 @@ public class Casa extends ImovelResidencial {
                 int qtdQuartos, int qtdSuites, int qtdSalasEstar, int qtdSalasJantar,
                 int vagasGaragem, double areaM2, boolean possuiArmarioEmbutido, String descricao){
         super(CategoriaImovel.CASA, statusImovel, dataConstrucao, dataDisponibilizacao, endereco, valorSugerido,
-                proprietarioInicial, qtdQuartos, qtdSuites, qtdSalasEstar, qtdSalasJantar
+                proprietarioInicial, qtdQuartos, qtdSuites, qtdSalasEstar, qtdSalasJantar,
                 vagasGaragem, areaM2, possuiArmarioEmbutido, descricao);
     }
 
