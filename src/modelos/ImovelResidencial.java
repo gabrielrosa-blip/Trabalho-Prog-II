@@ -2,10 +2,9 @@ package modelos;
 
 import enums.CategoriaImovel;
 import enums.StatusImovel;
-
 import java.time.LocalDate;
 
-public class ImovelResidencial extends Imovel{
+public abstract class ImovelResidencial extends Imovel{
     protected int qtdQuartos;
     protected int qtdSuites;
     protected int qtdSalasEstar;
