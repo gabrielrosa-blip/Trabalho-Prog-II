@@ -25,6 +25,9 @@ public class Funcionario extends Pessoa{
         this.password = password;
         this.transacoes = new ArrayList<>();
     }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getTelefoneCelular() {
         return telefoneCelular;
@@ -47,5 +50,14 @@ public class Funcionario extends Pessoa{
     public List<Transacao> getTransacoes() {
         return transacoes;
     }
+    public void registrarTransacao(Transacao transacao){
+        this.transacoes.add(transacao);
+    }
+    public Double calcularSalarioTotal(){
+        double totalComissoes = transacoes.stream().mapToDouble(Transacao
+        ::getComissaoFuncionario).sum();
+        return totalComissoes + salario;
+    }
+
 
 }
