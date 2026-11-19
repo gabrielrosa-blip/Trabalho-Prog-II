@@ -66,5 +66,11 @@ public class Transacao {
         return comissaoFuncionario;
     }
 
+    @Override
+    public String toString(){
+        return String.format("Contrato #%d [%s] | Data: %s | Imóvel #%d (%s) | Cliente: %s | Corretor: %s | Valor Real: R$ %.2f (Imobiliária: R$ %.2f / Comissão: R$ %.2f) | Pgto: %s",
+                numeroContrato, tipoTransacao, dataTransacao, imovel.getCodigo(), imovel.getCategoriaImovel(),
+                clienteUsuario.getNome(), funcionario.getNome(), valorReal, valorImobiliaria, comissaoFuncionario, formaPagamento);
+    }
 
 }
