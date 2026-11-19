@@ -6,9 +6,9 @@ import enums.StatusImovel;
 import java.time.LocalDate;
 
 public class Apartamento  extends ImovelResidencial{
-    private int andar;
-    private Double valorCondominio;
-    private Boolean possuiPortaria24h;
+    private final int andar;
+    private final Double valorCondominio;
+    private final Boolean possuiPortaria24h;
 
     public Apartamento(CategoriaImovel categoriaImovel,
                        StatusImovel statusImovel, LocalDate dataConstrucao,
