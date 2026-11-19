@@ -3,9 +3,9 @@ package modelos;
 import java.util.List;
 
 public abstract class Cliente extends Pessoa {
-    private String sexo;
-    private String estadoCivil;
-    private String profissao;
+    private final String sexo;
+    private final String estadoCivil;
+    private final String profissao;
 
     public Cliente(String nome, String cpf, Endereco endereco, List<String> telefones,
                    String email, String sexo, String estadoCivil, String profissao) {
