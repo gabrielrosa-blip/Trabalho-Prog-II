@@ -9,15 +9,15 @@ import java.util.List;
 
 public abstract class  Imovel {
     private static int sequenciaCodigo = 1;
-    private int codigo;
-    private CategoriaImovel categoriaImovel;
+    private final int codigo;
+    private final CategoriaImovel categoriaImovel;
     private StatusImovel statusImovel;
-    private LocalDate dataConstrucao;
-    private LocalDate dataDisponibilizacao;
+    private final LocalDate dataConstrucao;
+    private final LocalDate dataDisponibilizacao;
     private LocalDate dataFechamento;
-    private Endereco endereco;
-    private double valorSugirido;
-    private List<ClienteProprietario> proprietarios;
+    private final Endereco endereco;
+    private final double valorSugirido;
+    private final List<ClienteProprietario> proprietarios;
 
     public Imovel(CategoriaImovel categoriaImovel, StatusImovel statusImovel, LocalDate dataConstrucao,
                   LocalDate dataDisponizacao, Endereco endereco, double valorSugerido,
@@ -58,6 +58,10 @@ public abstract class  Imovel {
         return statusImovel;
     }
 
+    public void setStatusImovel(StatusImovel statusImovel) {
+        this.statusImovel = statusImovel;
+    }
+
     public LocalDate getDataConstrucao() {
         return dataConstrucao;
     }
@@ -68,6 +72,10 @@ public abstract class  Imovel {
 
     public LocalDate getDataFechamento() {
         return dataFechamento;
+    }
+
+    public void setDataFechamento(LocalDate dataFechamento) {
+        this.dataFechamento = dataFechamento;
     }
 
     public Endereco getEndereco() {

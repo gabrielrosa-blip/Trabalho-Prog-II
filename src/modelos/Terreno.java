@@ -6,10 +6,10 @@ import enums.StatusImovel;
 import java.time.LocalDate;
 
 public class Terreno extends Imovel {
-    private Double areaM2;
-    private Double largura;
-    private Double comprimento;
-    private Boolean possuiAcliveDeclive;
+    private final Double areaM2;
+    private final Double largura;
+    private final Double comprimento;
+    private final Boolean possuiAcliveDeclive;
 
     public Terreno(CategoriaImovel categoriaImovel, StatusImovel statusImovel,
                    LocalDate dataConstrucao, LocalDate dataDisponizacao,
