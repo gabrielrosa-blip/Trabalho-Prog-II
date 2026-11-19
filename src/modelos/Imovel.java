@@ -1,4 +1,5 @@
 package modelos;
 
-public class Imovel {
+public abstract class  Imovel {
+    dsfgdsadf
 }
